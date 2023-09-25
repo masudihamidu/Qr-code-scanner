@@ -28,7 +28,7 @@ class _setState extends State<Home>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Qr scanner'),
+        title: const Text('Qr code scanner'),
         backgroundColor: Colors.lightBlueAccent,
       ),
 
