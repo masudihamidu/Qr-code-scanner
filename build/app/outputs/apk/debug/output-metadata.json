@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.qr_scanner",
+  "applicationId": "com.example.scanner_qr",
   "variantName": "debug",
   "elements": [
     {
