@@ -43,6 +43,17 @@ class _setState extends State<Home>{
                   key: _globalKey,
                   onQRViewCreated: qrCont
               ),
+            ),
+            
+            Padding(
+                padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
+              child: (result != null) ? Text('${result!.code}') :
+              const Text('Scan a Qr code',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold
+              ),
+              ),
             )
           ],
         ),
