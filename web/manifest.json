@@ -1,6 +1,6 @@
 {
-    "name": "qr_scanner",
-    "short_name": "qr_scanner",
+    "name": "scanner_qr",
+    "short_name": "scanner_qr",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
