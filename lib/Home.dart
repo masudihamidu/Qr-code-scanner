@@ -36,24 +36,42 @@ class _setState extends State<Home>{
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
-              width: 300,
-              height: 300,
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.all(30),
+              child: SizedBox(
+              width: 250,
+              height: 250,
               child: QRView(
                   key: _globalKey,
                   onQRViewCreated: qrCont
               ),
             ),
+              )
+      ),
             
             Padding(
                 padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
-              child: (result != null) ? Text('${result!.code}') :
-              const Text('Scan a Qr code',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold
-              ),
-              ),
+              child: (result != null) ? Text('${result!.code}',
+                style: const TextStyle(
+                  color: Colors.black,
+                  fontSize: 20
+                ),
+              ) :
+
+                  const Center(
+                  child: Column(
+                    children: [
+                      Text('Scan a Qr code',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                      Icon(Icons.qr_code_2)
+                    ],
+                  ),
+            ),
             )
           ],
         ),
