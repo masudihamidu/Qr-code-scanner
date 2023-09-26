@@ -1,4 +1,4 @@
-#Mon Sep 25 19:08:36 EAT 2023
+#Tue Sep 26 16:30:24 EAT 2023
 base.0=/Users/user/AndroidStudioProjects/scanner_qr/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
